@@ -1,0 +1,8 @@
+docs
+images
+README.md
+.prettierrc
+node_modules
+.git
+.gitignore
+static/.gitkeep

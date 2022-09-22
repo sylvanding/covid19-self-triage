@@ -1,0 +1,29 @@
+.buttonGroup {
+  margin-top: 25px !important;
+  justify-content: flex-end !important;
+}
+
+.el-form-items {
+  &:nth-of-type(1) {
+    margin-top: 30px;
+  }
+  &:nth-last-of-type(n + 3) {
+    border-bottom: 1px solid rgb(212, 212, 212);
+  }
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.el-autocomplete {
+  width: 100% !important;
+}
+
+.regions-search-notify {
+  .date {
+    margin-bottom: 5px;
+  }
+  .date[danger='true'],
+  .msg[danger='true'] {
+    color: @red;
+  }
+}
