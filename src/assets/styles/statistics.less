@@ -1,0 +1,22 @@
+.el-table-common {
+  background-color: @veryLightGray !important;
+}
+
+.el-table-row {
+  &:extend(.el-table-common);
+}
+
+.el-table-header-cell {
+  &:extend(.el-table-common);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

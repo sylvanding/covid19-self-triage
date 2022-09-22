@@ -1,0 +1,72 @@
+@success: #97c05c;
+@danger: #f89292;
+
+.el-dialog {
+  .el-dialog__header {
+    background-color: @success;
+    border-radius: 15px 15px 0 0;
+  }
+  .el-dialog__body {
+    .icon-text {
+      margin-top: 20px;
+    }
+    .icon-col {
+      #rotate-icon-3d {
+        text-shadow: 5px 5px 5px;
+        animation: rotate 2.5s infinite;
+      }
+      @keyframes rotate {
+        0% {
+          text-shadow: 5px 5px 5px;
+        }
+        33% {
+          text-shadow: -5px 2px 3px;
+        }
+        66% {
+          text-shadow: -3px 1px 2px;
+        }
+        100% {
+          text-shadow: 5px 5px 5px;
+        }
+      }
+      font-size: 100px;
+    }
+    padding: 0 0 30px 0;
+    background-color: @success;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  .el-dialog__footer {
+    .tip-text {
+      text-align: center;
+      color: @varyDarkBlue;
+      font-size: 14px;
+      margin-bottom: 25px;
+      margin-top: 15px;
+    }
+    padding: 15px 40px 30px 40px;
+  }
+
+  .el-row {
+    .el-col {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  border-radius: 15px;
+}
+
+.danger {
+  .el-dialog__header {
+    background-color: @danger;
+  }
+  .el-dialog__body {
+    background-color: @danger;
+  }
+  .el-dialog__footer {
+    .tip-text {
+      color: @red;
+    }
+  }
+}
