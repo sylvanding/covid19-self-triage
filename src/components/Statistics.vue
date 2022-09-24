@@ -1,5 +1,5 @@
 <template>
-  <el-row>
+  <el-row class="Statistics">
     <my-card span="24" color="orange">
       <template #header>
         <el-row type="flex" justify="space-between">

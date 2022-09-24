@@ -1,5 +1,5 @@
 <template>
-  <el-row>
+  <el-row class="ContactsCheck">
     <my-card color="red">
       <template #header>
         <div class="card-header">

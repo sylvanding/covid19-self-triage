@@ -60,11 +60,11 @@ export default {
 </script>
 
 <style lang="less">
-p {
-  margin: 0;
-  padding: 0;
-}
 #clock {
+  p {
+    margin: 0;
+    padding: 0;
+  }
   text-align: center;
   .time {
     letter-spacing: 0.05em;

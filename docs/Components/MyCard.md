@@ -8,7 +8,7 @@ We follow the design principle: **use components in Element UI only when involvi
 
 After globally registering `MyCard`, you can use `<my-card>` in any Vue template: 
 
-```html
+```vue
 <template>
   <el-row>
     <my-card span="24" color="orange">

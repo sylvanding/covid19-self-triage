@@ -1,5 +1,5 @@
 <template>
-  <el-row>
+  <el-row class="Notice">
     <my-card color="blue">
       <template #header>
         <div class="card-header">

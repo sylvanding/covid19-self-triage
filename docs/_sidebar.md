@@ -8,6 +8,7 @@
   - [ContactsCheckResultDialog](Components/ContactsCheckResultDialog.md)
   - [ContactsCheck](Components/ContactsCheck.md)
   - [RegionsSearch](Components/RegionsSearch.md)
+  - [MyHeader&Footer](Components/MyHeader&Footer.md)
 * Development
   - [VS Code Config](Development/VSCodeConfig.md)
   - [Vue CLI](Development/VueCLI.md)

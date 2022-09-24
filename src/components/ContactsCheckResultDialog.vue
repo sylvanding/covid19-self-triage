@@ -1,43 +1,45 @@
 <template>
-  <el-dialog
-    :visible.sync="dialogVisible"
-    width="280px"
-    :show-close="false"
-    :custom-class="isContact === false ? '' : 'danger'"
-    :close-on-click-modal="false"
-    :close-on-press-escape="false"
-  >
-    <el-row class="el-dialog-content">
-      <el-col class="icon-col" :span="24">
-        <i
-          id="rotate-icon-3d"
-          :class="{
-            'el-icon-circle-close': isContact,
-            'el-icon-circle-check': !isContact,
-          }"
-        ></i>
-      </el-col>
-      <el-col :span="24">
-        <span class="icon-text">{{ iconTextContent }}</span>
-      </el-col>
-    </el-row>
-    <el-row slot="footer">
-      <el-col :span="24">
-        <el-tag :type="elType" size="small">
-          <span>{{ number }}</span>
-          <span>{{ date }}</span>
-        </el-tag>
-      </el-col>
-      <el-col :span="24">
-        <span class="tip-text">{{ message }}</span>
-      </el-col>
-      <el-col :span="24">
-        <el-button @click="confirm" :type="elType" round>
-          {{ buttonTextContent }}
-        </el-button>
-      </el-col>
-    </el-row>
-  </el-dialog>
+  <div class="ContactsCheckResultDialog">
+    <el-dialog
+      :visible.sync="dialogVisible"
+      width="280px"
+      :show-close="false"
+      :custom-class="isContact === false ? '' : 'danger'"
+      :close-on-click-modal="false"
+      :close-on-press-escape="false"
+    >
+      <el-row class="el-dialog-content">
+        <el-col class="icon-col" :span="24">
+          <i
+            id="rotate-icon-3d"
+            :class="{
+              'el-icon-circle-close': isContact,
+              'el-icon-circle-check': !isContact,
+            }"
+          ></i>
+        </el-col>
+        <el-col :span="24">
+          <span class="icon-text">{{ iconTextContent }}</span>
+        </el-col>
+      </el-row>
+      <el-row slot="footer">
+        <el-col :span="24">
+          <el-tag :type="elType" size="small">
+            <span>{{ number }}</span>
+            <span>{{ date }}</span>
+          </el-tag>
+        </el-col>
+        <el-col :span="24">
+          <span class="tip-text">{{ message }}</span>
+        </el-col>
+        <el-col :span="24">
+          <el-button @click="confirm" :type="elType" round>
+            {{ buttonTextContent }}
+          </el-button>
+        </el-col>
+      </el-row>
+    </el-dialog>
+  </div>
 </template>
 
 <script>

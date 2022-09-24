@@ -1,5 +1,5 @@
 <template>
-  <el-row>
+  <el-row class="RegionsSearch">
     <my-card color="berry">
       <template #header>
         <div class="card-header">

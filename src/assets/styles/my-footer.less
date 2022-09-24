@@ -1,0 +1,92 @@
+.MyFooter {
+  .footer-distributed {
+    .footer-left {
+      p,
+      .ICP {
+        color: #8f9296;
+        font-size: 14px;
+      }
+      .ICP {
+        &:hover {
+          text-decoration: underline;
+        }
+        text-decoration: none;
+      }
+    }
+    .footer-right {
+      a {
+        &:hover {
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+        }
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        font-size: 35px;
+        text-align: center;
+        line-height: 35px;
+        margin-left: 3px;
+        transition: all 0.25s;
+      }
+      float: right;
+      margin-top: 6px;
+      max-width: 180px;
+    }
+    p.footer-links {
+      a {
+        &:before {
+          content: '·';
+          font-size: 20px;
+          left: 0;
+          color: #fff;
+          display: inline-block;
+          padding-right: 5px;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+        transition: ease 0.25s;
+      }
+      .link-1:before {
+        content: none;
+      }
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0 0 10px;
+      padding: 0;
+      transition: ease 0.25s;
+    }
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: 16px;
+    padding: 45px 50px;
+    border: 1px solid #5b5b5b;
+    border-radius: 10px;
+  }
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+}

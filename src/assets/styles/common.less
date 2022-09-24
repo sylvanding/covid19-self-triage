@@ -7,10 +7,24 @@
 @grayishBlue: hsl(229, 6%, 66%);
 @veryLightGray: hsl(0, 0%, 98%);
 
+body {
+  background-color: @veryLightGray;
+}
+
 .card-header {
   display: flex;
   align-items: center;
   span {
     padding-left: 5px;
   }
+}
+
+.social-github-icon::before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 1em;
+  height: 1em;
+  background-size: cover;
+  background-image: url('../assets/images/social_github_icon.png');
 }

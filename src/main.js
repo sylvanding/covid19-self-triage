@@ -30,6 +30,7 @@ import {
   Notification,
   Menu,
   MenuItem,
+  Footer,
 } from 'element-ui'
 
 Vue.use(Container)
@@ -54,6 +55,7 @@ Vue.use(Dialog)
 Vue.use(Autocomplete)
 Vue.use(Menu)
 Vue.use(MenuItem)
+Vue.use(Footer)
 
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
